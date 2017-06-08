@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('test','PrakerinController@percobaan');
+
+Route::get('test1','PrakerinController@percobaan1');
+
+Route::get('test2','PrakerinController@percobaan2');
+
+Route::get('test3','PrakerinController@percobaan3');
+
+Route::get('test4','PrakerinController@percobaan4');
+
+Route::get('halaman/{id}', 'PrakerinController@param');
+
+Route::get('{a}', 'PrakerinController@parameter');
