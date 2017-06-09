@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                   Halaman Laravel Taufik
+                   Halaman Laravel {{$a}}
                 </div>
 
                 <div class="links">
