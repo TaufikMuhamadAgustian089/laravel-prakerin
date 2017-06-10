@@ -29,15 +29,21 @@
 
 // Route::get('{a}', 'PrakerinController@parameter');
 
-Route::get('Coba', 'CobaController@test');
+// Route::get('Coba', 'CobaController@test');
 
-//Route::get('{id}', 'CobaController@testt');
+// Route::get('Cobacoba', 'CobaController@tes');
 
-Route::get('index', 'CobaController@indexa');
+// Route::get('Cobaan/{nama}', 'CobaController@tests');
 
-Route::get('buah', 'CobaController@indexi');
+// Route::get('{id}', 'CobaController@testt');
 
-Route::get('nama', 'CobaController@indexn');
+// Route::get('index', 'CobaController@indexa');
 
-Route::get('test/{id}', 'CobaController@indexh');
+// Route::get('buah', 'CobaController@indexi');
+
+// Route::get('nama', 'CobaController@indexn');
+
+// Route::get('test/{id}', 'CobaController@indexh');
+
+Route::resource('post','PostController');
 

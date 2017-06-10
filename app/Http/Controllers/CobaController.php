@@ -11,7 +11,19 @@ class CobaController extends Controller
     public function test ()
     {
     	$a = coba::all();
-    	return $a;
+    	return view('coba', compact('a'));
+    }
+
+    public function tes()
+    {
+        $n = coba::where('Nama','like','%Taufik%')->get();
+        return $n;
+    }
+
+    public function tests($nama)
+    {
+        $n = coba::where('nama','like',$nama)-> orwhere ('jurusan','like',$nama)->get();
+        return $n;
     }
 
     public function testt ($id)
@@ -33,9 +45,9 @@ class CobaController extends Controller
 
     public function indexh ($id)
     {
-        $tiga = ['hewan' => ['Kucing','Ikan'],
-                 'kendaraan' => ['mobil', 'motor'],
-                 'laptop' => ['asus', 'acer']];
+        $tiga = ['hewan' => ['Kucing','Ikan', 'Ulat', 'Macan', 'Srigala'],
+                 'kendaraan' => ['mobil', 'motor', 'Becak', 'Sepeda', 'Kapal'],
+                 'laptop' => ['asus', 'acer', 'lenovo', 'hp', 'Compaq']];
                  $haha = $tiga[$id];
                  return view ('tiga', compact('haha'));
     }
